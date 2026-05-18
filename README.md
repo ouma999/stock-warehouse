@@ -4,7 +4,7 @@ A production-style data engineering project that automatically extracts real sto
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ```
 Yahoo Finance API
@@ -32,7 +32,7 @@ All services run inside Docker containers on your local machine.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Role | Why We Used It |
 |------|------|----------------|
@@ -47,7 +47,7 @@ All services run inside Docker containers on your local machine.
 
 ---
 
-## 📊 What the Pipeline Does
+## What the Pipeline Does
 
 The pipeline runs **daily** and performs 3 tasks in sequence:
 
@@ -73,7 +73,7 @@ Queries the database for any stocks that moved more than 2% in the last hour and
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 stock-warehouse/
@@ -89,7 +89,7 @@ stock-warehouse/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
@@ -157,7 +157,7 @@ ORDER BY ticker;
 
 ---
 
-## 🔍 How Docker Works in This Project
+## How Docker Works in This Project
 
 Docker solves the "it works on my machine" problem by packaging software into **containers** — isolated environments with everything the app needs.
 
@@ -180,7 +180,7 @@ Without Docker:                    With Docker:
 
 ---
 
-## 🌊 How Airflow Works
+## How Airflow Works
 
 Airflow organizes pipelines as **DAGs** (Directed Acyclic Graphs):
 
@@ -197,7 +197,7 @@ The Airflow **Scheduler** constantly checks if any DAGs are due to run. When the
 
 ---
 
-## 📈 Tracked Stocks
+## Tracked Stocks
 
 | Ticker | Company |
 |--------|---------|
@@ -212,7 +212,7 @@ The Airflow **Scheduler** constantly checks if any DAGs are due to run. When the
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 ```sql
 CREATE TABLE stock_prices (
@@ -229,7 +229,7 @@ CREATE TABLE stock_prices (
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Add a Grafana dashboard for visualization
 - [ ] Store more historical data (1 year)
@@ -240,6 +240,6 @@ CREATE TABLE stock_prices (
 
 ---
 
-## 👤 Author
+## Author
 
 Built by **ouma999**
