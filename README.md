@@ -1,4 +1,4 @@
-# 📈 Stock Data Warehouse
+# Stock Data Warehouse
 
 A production-style data engineering project that automatically extracts real stock market data, transforms it with analytics, and loads it into a PostgreSQL data warehouse — all orchestrated with Apache Airflow running in Docker.
 
