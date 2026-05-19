@@ -26,6 +26,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests
-  run: |
-    cd stock_warehouse
-    python stock_pipeline.py test
+  run: python manage.py test
+  working-directory: ./stock_warehouse
