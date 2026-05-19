@@ -28,4 +28,4 @@ jobs:
     - name: Run Tests
   run: |
     cd stock_warehouse
-    python manage.py test
+    python stock_pipeline.py test
